@@ -12,9 +12,11 @@ module.exports = class Users{
         this.list = this.makeList();
     }
     
+    
     listLenght(){
         return this.getNames().length;
     }
+
 
     getNames(){
         let nameArray = fs.readFileSync('./src/names.txt', 'utf8').split('\n');
@@ -103,6 +105,7 @@ module.exports = class Users{
         }
         return emails;
     }
+
 
     makeList(){
         let list = {};

@@ -9,12 +9,12 @@ class User{
     }
 
     function __construct($_firstName, $_lastName, $_dob, $_address, $_phone, $_email){
-        $this->first_name = $_firstName;
-        $this->last_name = $_lastName;
-        $this->dob = $_dob;
-        $this->address = $_address;
-        $this->phone = $_phone;
-        $this->email = $_email;
+        $this->first_name = $this->sanitize($_firstName);
+        $this->last_name = $this->sanitize($_lastName);
+        $this->dob = $this->sanitize($_dob);
+        $this->address = $this->sanitize($_address);
+        $this->phone = $this->sanitize($_phone);
+        $this->email = $this->sanitize($_email);
     }
 }
 ?>
