@@ -1,0 +1,19 @@
+{
+  "name": "randomgenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "browserify -t brfs ./src/app.js > ./out/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "brfs": "^2.0.2",
+    "browserify": "^16.5.0"
+  }
+}
